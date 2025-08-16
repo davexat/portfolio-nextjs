@@ -10,14 +10,22 @@ const HeaderUI = () => {
         const isDarkMode = localStorage.getItem('theme') === 'dark' ||
             (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
         setIsDark(isDarkMode);
-        document.documentElement.classList.toggle('dark', isDarkMode);
+        if (isDarkMode) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
     }, []);
 
     const toggleTheme = () => {
         const newTheme = !isDark;
         setIsDark(newTheme);
         localStorage.setItem('theme', newTheme ? 'dark' : 'light');
-        document.documentElement.classList.toggle('dark', newTheme);
+        if (newTheme) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
     };
 
     const navItems = [
@@ -46,11 +54,12 @@ const HeaderUI = () => {
             <nav>
                 {navItems.map((item) => (
                     <Button 
-                        className=''
+                        className='relative group text-foreground transition-colors duration-300'
                         key={item.href}
                         onClick={() => scrollToSection(item.href)}
                     >
                         {item.label}
+                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </Button>
                 ))}
             </nav>

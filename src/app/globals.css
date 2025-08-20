@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ededed;
   --foreground: #131313;
-
-  --text-white: #f0f0f0;
   --text-black: #181b20;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #131313;
     --foreground: #ededed;
@@ -16,7 +16,7 @@
     --text-white: #181b20;
     --text-black: #f0f0f0;
   }
-}
+} */
 
 body {
   background: var(--background);

@@ -1,5 +1,6 @@
 import { useState, useEffect, use } from 'react';
 import { Sun, Moon, Menu, X } from "lucide-react";
+import { scrollToSection } from '@/lib/utils';
 import Button from './ui/button';
 
 const HeaderUI = () => {
@@ -37,11 +38,8 @@ const HeaderUI = () => {
         { href: '#contact', label: 'Contact' }
     ];
 
-    const scrollToSection = (href: string) => {
-        const element = document.querySelector(href);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+    const handleScrollToSection = (href: string) => {
+        scrollToSection(href);
         setIsMobileMenuOpen(false);
     };
 
@@ -57,7 +55,7 @@ const HeaderUI = () => {
                         <Button
                             className='relative group text-foreground transition-colors duration-300'
                             key={item.href}
-                            onClick={() => scrollToSection(item.href)}
+                            onClick={() => handleScrollToSection(item.href)}
                         >
                             {item.label}
                             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -88,7 +86,7 @@ const HeaderUI = () => {
                         <Button
                             className='text-left text-foreground-80 hover:text-foreground transition-colors duration-300 py-2'
                             key={item.href}
-                            onClick={() => scrollToSection(item.href)}
+                            onClick={() => handleScrollToSection(item.href)}
                         >
                             {item.label}
                         </Button>

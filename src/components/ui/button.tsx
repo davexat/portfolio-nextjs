@@ -9,7 +9,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ children, className = "", ...props }, ref) => (
     <button
       ref={ref}
-      className={`button ${className}`}
+      className={`${className}`}
       {...props}
     >
       {children}

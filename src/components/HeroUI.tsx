@@ -4,11 +4,11 @@ import { scrollToSection } from '@/lib/utils';
 
 const HeroUI = () => {
     return (
-        <section id='home' className='min-h-screen flex items-center justify-center relative overflow-hidden'>
+        <section id='home' className='min-h-screen flex items-center justify-center relative overflow-hidden bg-white dark:bg-black'>
             {/* Content */}
-            <div>
-                <h1>David Sandoval</h1>
-                <p>Full Stack Developer</p>
+            <div className='flex flex-col items-center space-x-4 max-w-8xl mx-auto px-4'>
+                <h1 className='text-7xl font-bold bg-gradient-to-r from-blue-500 via-blue-400 to-violet-600 bg-clip-text text-transparent'>David Sandoval</h1>
+                <p className='text-2xl text-slate-700 dark:text-neutral-100'>Full Stack Developer, Data Analyst & AI Enthusiast. I enjoy learning about new technologies and applying them to solve real-world problems</p>
             </div>
             {/* Buttons */}
             <div className='flex items-center space-x-4'>

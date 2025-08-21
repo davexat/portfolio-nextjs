@@ -5,9 +5,17 @@ import { scrollToSection } from '@/lib/utils';
 const HeroUI = () => {
     return (
         <section id='home' className='min-h-screen flex items-center justify-center relative overflow-hidden'>
-
+            {/* Content */}
+            <div>
+                <h1>David Sandoval</h1>
+                <p>Full Stack Developer</p>
+            </div>
             {/* Buttons */}
             <div className='flex items-center space-x-4'>
+                <Button onClick={() => scrollToSection('about')} className='py-2 px-3.5 bg-gradient-to-r from-blue-500/80 via-blue-400/80 to-violet-600/80 hover:bg-gray-500/70 transition-all duration-300 flex items-center space-x-5 border rounded-md overflow-hidden border-blue-100 hover:border-blue-400'>
+                    <p className='text-lg'>Learn More</p>
+                    <LuArrowDown className='h-5 w-5' />
+                </Button>
                 <Button onClick={() => window.open('https://github.com/tuusuario', '_blank')} className='py-2 px-3.5 bg-white/80 hover:bg-blue-300/80 dark:bg-slate-900/80 dark:hover:bg-blue-900/90 border rounded-md overflow-hidden border-blue-400/20 hover:border-blue-400 transition-all duration-300 text-slate-900 dark:text-white'>
                     <LuGithub className='h-5 w-5' />
                 </Button>

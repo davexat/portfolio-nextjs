@@ -44,7 +44,7 @@ const HeaderUI = () => {
     };
 
     return (
-        <header className='fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b bg-white/80 dark:bg-zinc-700/80'>
+        <header className='fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b bg-white/80 dark:bg-neutral-950/80'>
             <div className='flex justify-between items-center mx-auto px-4 py-4 text-slate-700 dark:text-neutral-100 max-w-7xl'>
                 <p className='text-2xl font-bold bg-gradient-to-r from-blue-500 via-blue-400 to-violet-600 bg-clip-text text-transparent'>
                     David Sandoval

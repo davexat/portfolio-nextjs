@@ -49,14 +49,16 @@ const projects: Project[] = [
         title: "Telco Churn Predictor",
         description: "A predictive analytics dashboard that identifies at-risk customers, visualizes churn patterns, and provides actionable insights for retention.",
         technologies: ["Pandas", "XGBoost", "SHAP", "Power BI", "Seaborn"],
-        liveLink: "https://github.com/davexat/telco-churn-prediction-powerbi",
+        repoLink: "https://github.com/davexat/telco-churn-prediction-powerbi",
         status: statuses[1],
     },
     {
-        title: "Project 5",
-        description: "Description for Project 5",
-        technologies: ["C#", ".NET"],
-        status: statuses[2],
+        title: "Django API Suite",
+        description: "Django REST API with user management, Firebase integration, and a responsive homepage for modern web apps.",
+        technologies: ["Django", "Python", "Firebase", "REST API", "HTML", "Tailwind CSS", "JavaScript"],
+        repoLink: "https://github.com/davexat/django_api_suite",
+        liveLink: "https://davexat.pythonanywhere.com/",
+        status: statuses[0],
     }
 ];
 

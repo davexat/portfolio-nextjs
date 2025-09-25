@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from 'react';
+import { useState } from 'react';
 import { Sun, Moon, Menu, X } from "lucide-react";
 import { scrollToSection } from '@/lib/utils';
 import Button from './ui/button';

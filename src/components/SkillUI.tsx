@@ -1,5 +1,4 @@
 import TechItem from './ui/tech';
-import { useState, useEffect } from 'react';
 
 const SkillUI = ({ isDark } : { isDark: boolean }) => {
 

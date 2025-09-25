@@ -1,9 +1,9 @@
 'use client';
-import FlowBackground from '@/components/FlowBackground';
 import HeaderUI from '@/components/HeaderUI';
 import HeroUI from '@/components/HeroUI';
 import AboutUI from '@/components/AboutUI';
 import SkillUI from '@/components/SkillUI';
+import ProjectUI from '@/components/ProjectUI';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -37,6 +37,7 @@ export default function Home() {
             <HeroUI />
             <AboutUI />
             <SkillUI isDark={isDark} />
+            <ProjectUI />
         </>
     );
 }

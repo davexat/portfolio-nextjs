@@ -12,17 +12,21 @@ const HeroUI = () => {
             </div>
             {/* Buttons */}
             <div className='flex items-stretch gap-3'>
-                <Button onClick={() => scrollToSection('about')} className='py-2 px-4 bg-blue-300 hover:bg-blue-400/90 dark:bg-blue-700 dark:hover:bg-blue-900/90 transition-all duration-300 flex items-center rounded-md overflow-hidden border-blue-400/20 dark:hover:border-blue-400 text-slate-900 dark:text-slate-200 border gap-2'>
-                    <p className='text-lg'>Learn More</p>
-                    <LuArrowDown className='h-5 w-5' />
+                <Button onClick={() => scrollToSection('#about')} className='relative flex items-center justify-center rounded-md py-2 px-4 overflow-hidden group border gap-2 border-blue-400/20 dark:hover:border-blue-400'>
+                    <div className="absolute inset-0 z-0 bg-gradient-to-r from-blue-500 via-blue-400 to-violet-600 bg-[length:200%_200%] animate-gradient-move transition-opacity duration-300 group-hover:opacity-0" />
+                    <div className="absolute inset-0 z-0 bg-blue-900 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <span className="relative z-10 flex items-center gap-1 text-white">
+                        <p className='text-lg'>Learn More</p>
+                        <LuArrowDown className="h-5 w-5" />
+                    </span>
                 </Button>
-                <Button onClick={() => window.open('https://github.com/tuusuario', '_blank')} className='py-2 px-3.5 bg-white/80 hover:bg-blue-300/80 dark:bg-slate-900/80 dark:hover:bg-blue-900/90 border rounded-md overflow-hidden border-blue-400/20 hover:border-blue-400 transition-all duration-300 text-slate-900 dark:text-white'>
+                <Button href='https://github.com/tuusuario' target='_blank' rel='noopener noreferrer' className='flex items-center py-2 px-3.5 bg-white/80 hover:bg-blue-300/80 dark:bg-slate-900/80 dark:hover:bg-blue-900/90 border rounded-md overflow-hidden border-blue-400/20 hover:border-blue-400 transition-all duration-300 text-slate-900 dark:text-white'>
                     <LuGithub className='h-5 w-5' />
                 </Button>
-                <Button onClick={() => window.open('https://linkedin.com/in/tuusuario', '_blank')} className='py-2 px-3.5 bg-white/80 hover:bg-blue-300/80 dark:bg-slate-900/80 dark:hover:bg-blue-900/90 border rounded-md overflow-hidden border-blue-400/20 hover:border-blue-400 transition-all duration-300 text-slate-900 dark:text-white'>
+                <Button href='https://linkedin.com/in/tuusuario' target='_blank' rel='noopener noreferrer' className='flex items-center py-2 px-3.5 bg-white/80 hover:bg-blue-300/80 dark:bg-slate-900/80 dark:hover:bg-blue-900/90 border rounded-md overflow-hidden border-blue-400/20 hover:border-blue-400 transition-all duration-300 text-slate-900 dark:text-white'>
                     <LuLinkedin className='h-5 w-5' />
                 </Button>
-                <Button onClick={() => scrollToSection('contact')} className='py-2 px-3.5 bg-white/80 hover:bg-blue-300/80 dark:bg-slate-900/80 dark:hover:bg-blue-900/90 border rounded-md overflow-hidden border-blue-400/20 hover:border-blue-400 transition-all duration-300 text-slate-900 dark:text-white'>
+                <Button onClick={() => scrollToSection('#contact')} className='flex items-center py-2 px-3.5 bg-white/80 hover:bg-blue-300/80 dark:bg-slate-900/80 dark:hover:bg-blue-900/90 border rounded-md overflow-hidden border-blue-400/20 hover:border-blue-400 transition-all duration-300 text-slate-900 dark:text-white'>
                     <LuMail className='h-5 w-5' />
                 </Button>
             </div>

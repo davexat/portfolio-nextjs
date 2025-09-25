@@ -3,7 +3,18 @@ import { clsx } from "clsx";
 export const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        const header = document.querySelector("header");
+        const headerHeight = header ? header.getBoundingClientRect().height : 0;
+
+        const elementTop = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementTop - headerHeight - 8;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+        });
+
+        history.pushState(null, "", href);
     }
 };
 

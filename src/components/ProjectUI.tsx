@@ -23,32 +23,40 @@ interface Project {
 
 const projects: Project[] = [
     {
-        title: "Project 1",
-        description: "Description for Project 1",
-        technologies: ["React", "TypeScript", "TailwindCSS"],
-        repoLink: "https://github.com/user/project1",
-        liveLink: "https://project1.com",
+        title: "Customer Segmentation Dashboard",
+        description: "Interactive dashboard that visualizes customer segments to support targeted marketing and business decisions.",
+        technologies: ["Python", "Pandas", "ScikitLearn", "Seaborn", "Streamlit"],
+        repoLink: "https://github.com/davexat/Customer_Segmentation_Dashboard",
         status: statuses[0],
     },
     {
-        title: "Project 2",
-        description: "Description for Project 2",
-        technologies: ["Node.js", "Express"],
-        liveLink: "https://project2.com",
+        title: "Weather Dashboard AI",
+        description: "A PWA that provides real-time and forecasted weather data, interactive charts, alerts, and an AI assistant for any city.",
+        technologies: ["React", "TypeScript", "Openweather API", "Vite", "MUI"],
+        repoLink: "https://github.com/davexat/dashboard",
+        liveLink: "https://davexat.github.io/dashboard/",
+        status: statuses[0],
+    },
+    {
+        title: "Curriculum Vitae Website",
+        description: "Personal portfolio website showcasing skills, projects, and professional experience.",
+        technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+        liveLink: "https://davexat.vercel.app",
+        repoLink: "https://github.com/davexat/portfolio-nextjs",
         status: statuses[1],
     },
     {
-        title: "Project 3",
-        description: "Description for Project 3",
-        technologies: ["Python", "Django"],
-        repoLink: "https://github.com/user/project3",
-        status: statuses[2],
+        title: "Telco Churn Predictor",
+        description: "A predictive analytics dashboard that identifies at-risk customers, visualizes churn patterns, and provides actionable insights for retention.",
+        technologies: ["Pandas", "XGBoost", "SHAP", "Power BI", "Seaborn"],
+        liveLink: "https://github.com/davexat/telco-churn-prediction-powerbi",
+        status: statuses[1],
     },
     {
-        title: "Project 4",
-        description: "Description for Project 4",
-        technologies: ["Java", "Spring Boot"],
-        status: statuses[0],
+        title: "Project 5",
+        description: "Description for Project 5",
+        technologies: ["C#", ".NET"],
+        status: statuses[2],
     }
 ];
 
@@ -57,9 +65,9 @@ const ProjectUI = () => {
         <section id='projects' className='p-10 gap-15 w-full flex flex-col items-center justify-center relative bg-white dark:bg-black'>
             <h1 className='text-4xl font-bold bg-gradient-to-r from-blue-500 via-blue-400 to-violet-600 bg-clip-text text-transparent text-center'>Projects</h1>
             {/* Content */}
-            <div className='flex flex-wrap gap-5'>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-7xl w-full">
                 {projects.map((project, index) => (
-                    <article key={index} className='grow-1 shrink-1 basis-full lg:basis-1/3 gap-4 grid grid-cols-[1fr_auto] auto-cols-max dark:bg-zinc-900 hover:text-blue-500 dark:text-white transition-all duration-300 px-5 py-5 border rounded-md border-gray-400/20'>
+                    <article key={index} className='hover:shadow-md gap-4 grid grid-cols-[1fr_auto] auto-cols-max dark:bg-zinc-900 hover:text-blue-500 dark:text-white transition-all duration-300 px-5 py-5 border rounded-md border-gray-400/20'>
                         <h2 className='col-span-1 text-xl'>{project.title}</h2>
                         <span className={`col-span-1 text-xs w-fit px-3 py-1 font-medium rounded-xl ${project.status.style} h-fit`}>{project.status.status}</span>
                         <p className='col-span-2 text-md text-slate-500'>{project.description}</p>

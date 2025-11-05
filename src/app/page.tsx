@@ -1,6 +1,6 @@
  'use client';
 import { Header } from '@/features/header';
-import HeroUI from '@/components/HeroUI';
+import HeroUI from '@/features/hero/components/HeroUI';
 import { About } from '@/features/about';
 import SkillUI from '@/components/SkillUI';
 import ProjectUI from '@/components/ProjectUI';

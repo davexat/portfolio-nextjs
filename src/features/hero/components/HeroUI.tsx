@@ -1,5 +1,5 @@
 import { LuArrowDown, LuMail, LuGithub, LuLinkedin } from 'react-icons/lu';
-import Button from './ui/button';
+import Button from '../../../components/ui/button';
 import { scrollToSection } from '@/lib/utils';
 
 const HeroUI = () => {

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import { scrollToSection } from '@/lib/utils';
 import Button from '@/components/ui/button';
-import clsx from 'clsx';
 
 type Props = {
   isDark: boolean;

@@ -1,5 +1,5 @@
 import { LuGithub, LuExternalLink } from 'react-icons/lu';
-import Button from './ui/button';
+import Button from '../../../components/ui/button';
 
 interface ProjectStatus {
     status: string;

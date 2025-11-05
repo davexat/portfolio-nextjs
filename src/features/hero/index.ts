@@ -1,1 +1,1 @@
-export { default as Header } from './components/HeroUI';
+export { default as Hero } from './components/HeroUI';

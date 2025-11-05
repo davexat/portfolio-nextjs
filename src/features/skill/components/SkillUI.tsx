@@ -1,4 +1,4 @@
-import TechItem from './ui/tech';
+import TechItem from '../../../components/ui/tech';
 
 const SkillUI = ({ isDark } : { isDark: boolean }) => {
 

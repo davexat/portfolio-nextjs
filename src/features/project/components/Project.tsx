@@ -69,13 +69,13 @@ const ProjectUI = () => {
             {/* Content */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-7xl w-full">
                 {projects.map((project, index) => (
-                    <article key={index} className='hover:shadow-md gap-4 grid grid-cols-[1fr_auto] auto-cols-max dark:bg-zinc-900 hover:text-blue-500 dark:text-white transition-all duration-300 px-5 py-5 border rounded-md border-gray-400/20'>
+                    <article key={index} className='project-card'>
                         <h2 className='col-span-1 text-xl'>{project.title}</h2>
                         <span className={`col-span-1 text-xs w-fit px-3 py-1 font-medium rounded-xl ${project.status.style} h-fit`}>{project.status.status}</span>
                         <p className='col-span-2 text-md text-slate-500'>{project.description}</p>
                         <ul className='col-span-2 flex flex-wrap gap-2 h-fit'>
                             {project.technologies.map((tech, techIndex) => (
-                                <li key={techIndex} className='text-sm text-blue-700 bg-blue-200 border border-blue-400 rounded-xl px-2 dark:text-white dark:bg-zinc-950 dark:border-transparent'>{tech}</li>
+                                <li key={techIndex} className='tech-badge'>{tech}</li>
                             ))}
                         </ul>
                         <div className='col-span-2 flex gap-2'>

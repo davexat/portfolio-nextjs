@@ -1,7 +1,7 @@
-'use client';
-import HeaderUI from '@/components/HeaderUI';
+ 'use client';
+import { Header } from '@/features/header';
 import HeroUI from '@/components/HeroUI';
-import AboutUI from '@/components/AboutUI';
+import { About } from '@/features/about';
 import SkillUI from '@/components/SkillUI';
 import ProjectUI from '@/components/ProjectUI';
 import { useState, useEffect } from 'react';
@@ -33,9 +33,9 @@ export default function Home() {
 
     return (
         <>
-            <HeaderUI isDark={isDark} toggleTheme={toggleTheme} />
+            <Header isDark={isDark} toggleTheme={toggleTheme} />
             <HeroUI />
-            <AboutUI />
+            <About />
             <SkillUI isDark={isDark} />
             <ProjectUI />
         </>

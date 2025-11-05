@@ -1,4 +1,4 @@
-const AboutUI = () => {
+export default function About() {
     return (
         <section id='about' className='p-10 gap-15 w-full flex flex-col items-center justify-center relative bg-white dark:bg-black'>
             <h1 className='text-4xl font-bold bg-gradient-to-r from-blue-500 via-blue-400 to-violet-600 bg-clip-text text-transparent text-center'>About Me</h1>
@@ -18,5 +18,3 @@ const AboutUI = () => {
         </section>
     )
 }
-
-export default AboutUI;

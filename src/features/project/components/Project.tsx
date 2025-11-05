@@ -75,12 +75,12 @@ const ProjectUI = () => {
                         <p className='col-span-2 text-md text-slate-500'>{project.description}</p>
                         <ul className='col-span-2 flex flex-wrap gap-2 h-fit'>
                             {project.technologies.map((tech, techIndex) => (
-                                <li key={techIndex} className='tech-badge'>{tech}</li>
+                                <li key={techIndex} className="tech-item">{tech}</li>
                             ))}
                         </ul>
                         <div className='col-span-2 flex gap-2'>
                             {project.repoLink && (
-                                <Button className='flex items-center justify-center w-full border rounded-md py-1 text-black border-gray-400/80 bg-white hover:bg-gray-300 dark:bg-black dark:border-transparent dark:text-white dark:hover:bg-gray-800 transition-all duration-300' href={project.repoLink} target='_blank' rel='noopener noreferrer'>
+                                <Button className="btn-repo" href={project.repoLink} target='_blank' rel='noopener noreferrer'>
                                     <LuGithub className='inline h-4 w-4 mr-1' /> <p className='text-sm'>Repository</p>
                                 </Button>
                             )}

@@ -1,1 +1,1 @@
-export { default as Skill } from './components/SkillUI';
+export { default as Skill } from './components/Skill';

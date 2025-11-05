@@ -1,1 +1,1 @@
-export { default as Project } from './components/ProjectUI';
+export { default as Project } from './components/Project';

@@ -73,7 +73,7 @@ body {
 
   /* Estilos visuales */
   .gradient-title {
-    @apply bg-gradient-to-r from-blue-600 dark:from-blue-400 via-indigo-500 dark:via-indigo-300 to-violet-600 dark:to-violet-300  bg-clip-text text-transparent;
+    @apply bg-linear-to-r from-blue-600 dark:from-blue-400 via-indigo-500 dark:via-indigo-300 to-violet-600 dark:to-violet-300  bg-clip-text text-transparent;
   }
 
   .style-header {
@@ -98,6 +98,10 @@ body {
 
   .border-button-hover {
     @apply hover:border-blue-400 hover:shadow-md;
+  }
+
+  .layout-list-skill {
+    @apply flex flex-wrap justify-center items-center gap-5;
   }
 
   /* Tamaños */

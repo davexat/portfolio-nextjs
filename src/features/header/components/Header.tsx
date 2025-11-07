@@ -26,40 +26,40 @@ export default function Header({ isDark, toggleTheme }: Props) {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b bg-white/80 dark:bg-neutral-950/80">
-      <div className="flex justify-between items-center mx-auto px-4 py-4 text-slate-700 dark:text-neutral-100 max-w-7xl">
-        <p className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-blue-400 to-violet-600 bg-clip-text text-transparent">
+    <header className="bg-header layout-header style-header transitions">
+      <div className="flex justify-between items-center mx-auto px-5 md:px-10 py-4 max-w-7xl color-text">
+        <p className="text-header gradient-title">
           David Sandoval
         </p>
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-8">
+        <nav className="hidden lg:flex items-center gap-8">
           {navItems.map((item) => (
             <Button
-              className="relative group opacity-80 hover:opacity-100 transition-colors duration-300 dark:text-slate-200"
+              className="group relative opacity-80-100 transitions"
               key={item.href}
               onClick={() => handleScrollToSection(item.href)}
             >
               {item.label}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transitions group-hover:w-full"></span>
             </Button>
           ))}
         </nav>
-        <div className="flex items-center space-x-4">
-          <Button onClick={toggleTheme} className="p-2">
-            {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+        <div className="flex items-center gap-4">
+          <Button onClick={toggleTheme}>
+            {isDark ? <Sun className="size-icon opacity-80-100 transitions" /> : <Moon className="size-icon opacity-80-100 transitions" />}
           </Button>
-          <Button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="lg:hidden p-2">
-            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          <Button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="lg:hidden">
+            {isMobileMenuOpen ? <X className="size-icon opacity-80-100 transitions" /> : <Menu className="size-icon opacity-80-100 transitions" />}
           </Button>
         </div>
       </div>
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <nav className="lg:hidden p-4 border-t border-border/50 animate-fade-in flex flex-col gap-1">
+        <nav className="lg:hidden p-4 border-t flex flex-col gap-1">
           {navItems.map((item) => (
             <Button
-              className="text-left opacity-80 rounded-sm hover:opacity-100 hover:bg-slate-900/20 dark:hover:bg-slate-200/20 py-2 dark:text-slate-200 px-4 transition-all duration-300"
+              className="text-left opacity-80-100 rounded-sm hover:bg-slate-900/20 dark:hover:bg-slate-200/20 py-2 px-4 transitions"
               key={item.href}
               onClick={() => handleScrollToSection(item.href)}
             >

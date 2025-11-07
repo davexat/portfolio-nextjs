@@ -65,7 +65,7 @@ const projects: Project[] = [
 const ProjectUI = () => {
     return (
         <section id='projects' className='p-10 gap-15 w-full flex flex-col items-center justify-center relative bg-white dark:bg-black'>
-            <h1 className='text-4xl font-bold bg-gradient-to-r from-blue-500 via-blue-400 to-violet-600 bg-clip-text text-transparent text-center'>Projects</h1>
+            <h1 className='title-size title-gradient text-center'>Projects</h1>
             {/* Content */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-7xl w-full">
                 {projects.map((project, index) => (

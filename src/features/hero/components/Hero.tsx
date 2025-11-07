@@ -14,7 +14,7 @@ const HeroUI = () => {
             </div>
             {/* Buttons */}
             <div className='flex gap-3'>
-                <Button onClick={() => scrollToSection('#about')} className='layout-button border border-button gap-2 bg-pc size-button color-text-invert bg-button-contrast-hover transitions'>
+                <Button onClick={() => scrollToSection('#about')} className='layout-button border border-button border-button-hover gap-2 bg-button-contrast bg-button-contrast-hover size-button text-white transitions'>
                     <p className='text-xl leading-none'>Learn More</p>
                     <LuArrowDown className="size-icon" />
                 </Button>

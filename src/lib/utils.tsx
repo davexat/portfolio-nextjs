@@ -71,3 +71,30 @@ export const backgroundColor = (color: string) => {
         "bg-stone-500": color === "stone",
     });
 };
+
+export const hoverShadowColor = (color: string) => {
+    return clsx({
+        "hover:shadow-red-500/20": color === "red",
+        "hover:shadow-orange-500/20": color === "orange",
+        "hover:shadow-amber-500/20": color === "amber",
+        "hover:shadow-yellow-500/20": color === "yellow",
+        "hover:shadow-lime-500/20": color === "lime",
+        "hover:shadow-green-500/20": color === "green",
+        "hover:shadow-emerald-500/20": color === "emerald",
+        "hover:shadow-teal-500/20": color === "teal",
+        "hover:shadow-cyan-500/20": color === "cyan",
+        "hover:shadow-sky-500/20": color === "sky",
+        "hover:shadow-blue-500/20": color === "blue",
+        "hover:shadow-indigo-500/20": color === "indigo",
+        "hover:shadow-violet-500/20": color === "violet",
+        "hover:shadow-purple-500/20": color === "purple",
+        "hover:shadow-fuchsia-500/20": color === "fuchsia",
+        "hover:shadow-pink-500/20": color === "pink",
+        "hover:shadow-rose-500/20": color === "rose",
+        "hover:shadow-slate-500/20": color === "slate",
+        "hover:shadow-gray-500/20": color === "gray",
+        "hover:shadow-zinc-500/20": color === "zinc",
+        "hover:shadow-neutral-500/20": color === "neutral",
+        "hover:shadow-stone-500/20": color === "stone",
+    });
+}

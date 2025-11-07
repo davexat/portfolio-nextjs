@@ -4,6 +4,7 @@ import HeroUI from '@/components/HeroUI';
 import AboutUI from '@/components/AboutUI';
 import SkillUI from '@/components/SkillUI';
 import ProjectUI from '@/components/ProjectUI';
+import ExperienceUI from '@/components/Experience';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -38,6 +39,7 @@ export default function Home() {
             <AboutUI />
             <SkillUI isDark={isDark} />
             <ProjectUI />
+            <ExperienceUI />
         </>
     );
 }

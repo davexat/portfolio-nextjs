@@ -38,6 +38,10 @@ body {
     @apply bg-white dark:bg-black;
   }
 
+  .bg-section {
+    @apply bg-neutral-100 dark:bg-slate-900;
+  }
+
   .bg-button {
     @apply bg-white dark:bg-zinc-900;
   }
@@ -61,6 +65,10 @@ body {
 
   .layout-button {
     @apply flex items-center rounded-md justify-center;
+  }
+
+  .layout-section {
+    @apply p-10 gap-15 w-full flex flex-col items-center justify-center;
   }
 
   /* Estilos visuales */

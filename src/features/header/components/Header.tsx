@@ -40,7 +40,7 @@ export default function Header({ isDark, toggleTheme }: Props) {
               onClick={() => handleScrollToSection(item.href)}
             >
               {item.label}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transitions group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pc transitions group-hover:w-full"></span>
             </Button>
           ))}
         </nav>
@@ -56,10 +56,10 @@ export default function Header({ isDark, toggleTheme }: Props) {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <nav className="lg:hidden p-4 border-t flex flex-col gap-1">
+        <nav className="lg:hidden p-4 flex flex-col gap-1 color-text">
           {navItems.map((item) => (
             <Button
-              className="text-left opacity-80-100 rounded-sm hover:bg-slate-900/20 dark:hover:bg-slate-200/20 py-2 px-4 transitions"
+              className="text-left opacity-80-100 rounded-sm  py-2 px-4 transitions"
               key={item.href}
               onClick={() => handleScrollToSection(item.href)}
             >

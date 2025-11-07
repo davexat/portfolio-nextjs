@@ -1,13 +1,13 @@
 export default function About() {
     return (
-        <section id='about' className='p-10 gap-15 w-full flex flex-col items-center justify-center relative bg-white dark:bg-black'>
-            <h1 className='title-size title-gradient text-center'>About Me</h1>
+        <section id='about' className='layout-section bg-section'>
+            <h1 className='text-title gradient-title'>About Me</h1>
             {/* Content */}
-            <div className='flex flex-col w-full xl:flex-row max-w-7xl text-xl text-justify justify-center items-center text-slate-500 gap-10'>
-                <div className="max-w-xs xl:max-w-1/2 xl:pr-15">
-                    <div className="shadow-lg xl:max-w-md items-stretch">
-                        <img src='/sample.jpg' alt='Profile Picture' className='object-cover flex-1'/>
-                    </div>
+            <div className='flex flex-col w-full xl:flex-row max-w-7xl text-xl text-justify justify-center items-center color-text gap-10'>
+                <div className="max-w-xs xl:max-w-2/5 xl:pr-15">
+                    <span className="shadow-lg xl:max-w-sm items-stretch">
+                        <img src='/sample.jpg' alt='Profile Picture'/>
+                    </span>
                 </div>
                 <div className="flex flex-col gap-5 w-full xl:max-w-1/2">
                     <p className=''>I'm David Sandoval, a Computer Science student at the Escuela Superior Politécnica del Litoral (ESPOL), a university internationally accredited by ABET and EUR-ACE. I'm passionate about data, artificial intelligence, and software development, and I've worked with technologies such as Python, Pandas, NumPy, Scikit-Learn, Streamlit, React, Node.js, and Django.</p>

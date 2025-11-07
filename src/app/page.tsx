@@ -1,10 +1,9 @@
-'use client';
-import HeaderUI from '@/components/HeaderUI';
-import HeroUI from '@/components/HeroUI';
-import AboutUI from '@/components/AboutUI';
-import SkillUI from '@/components/SkillUI';
-import ProjectUI from '@/components/ProjectUI';
-import ExperienceUI from '@/components/Experience';
+ 'use client';
+import { Header } from '@/features/header';
+import { Hero } from '@/features/hero';
+import { About } from '@/features/about';
+import { Skill } from '@/features/skill';
+import { Project } from '@/features/project';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -34,12 +33,11 @@ export default function Home() {
 
     return (
         <>
-            <HeaderUI isDark={isDark} toggleTheme={toggleTheme} />
-            <HeroUI />
-            <AboutUI />
-            <SkillUI isDark={isDark} />
-            <ProjectUI />
-            <ExperienceUI />
+            <Header isDark={isDark} toggleTheme={toggleTheme} />
+            <Hero />
+            <About />
+            <Skill isDark={isDark} />
+            <Project />
         </>
     );
 }

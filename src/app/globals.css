@@ -8,6 +8,7 @@
 	--text-black: #181b20;
 }
 
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #131313;
@@ -32,4 +33,50 @@ body {
 
 .animate-gradient-move {
   animation: gradient-move 5s ease infinite;
+}
+
+.hero-title {
+  @apply text-7xl font-bold bg-gradient-to-r from-blue-500 via-blue-400 to-violet-600 bg-clip-text text-transparent;
+}
+.section-title {
+  @apply text-4xl font-bold bg-gradient-to-r from-blue-500 via-blue-400 to-violet-600 bg-clip-text text-transparent text-center;
+}
+.btn-primary {
+  @apply px-4 py-2 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 transition;
+}
+.btn-gradient {
+  @apply btn-base relative justify-center py-2 px-4 group gap-2 border-blue-400/20 dark:hover:border-blue-400;
+}
+.btn-repo {
+  @apply flex items-center justify-center w-full border rounded-md py-1 text-black border-gray-400/80 bg-white hover:bg-gray-300 dark:bg-black dark:border-transparent dark:text-white dark:hover:bg-gray-800 transition-all duration-300;
+}
+.tech-item {
+  @apply group relative flex flex-col transition-all duration-300 justify-center items-center p-4 border rounded-md border-gray-400/20 hover:shadow-md bg-white dark:bg-zinc-900;
+}
+.btn-base {
+  @apply flex items-center border rounded-md overflow-hidden transition-all duration-300;
+}
+.text-base {
+  @apply text-sm px-2 rounded-xl;
+}
+.card-base {
+  @apply shadow-lg rounded-lg;
+}
+.section-container {
+  @apply p-10 gap-15 w-full flex flex-col items-center justify-center relative bg-white dark:bg-black;
+}
+.card {
+  @apply shadow-lg rounded-lg p-6 bg-white dark:bg-gray-800;
+}
+.text-secondary {
+  @apply text-xl text-justify text-slate-500;
+}
+.project-card {
+  @apply card-base hover:shadow-md gap-4 grid grid-cols-[1fr_auto] auto-cols-max dark:bg-zinc-900 hover:text-blue-500 dark:text-white px-5 py-5 border-gray-400/20;
+}
+.tech-badge {
+  @apply text-base text-blue-700 bg-blue-200 border border-blue-400 dark:text-white dark:bg-zinc-950 dark:border-transparent;
+}
+.btn-secondary {
+  @apply btn-base py-2 px-3.5 bg-white/80 hover:bg-blue-300/80 dark:bg-slate-900/80 dark:hover:bg-blue-900/90 border-blue-400/20 hover:border-blue-400 text-slate-900 dark:text-white;
 }

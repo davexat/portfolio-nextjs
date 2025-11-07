@@ -64,23 +64,23 @@ const projects: Project[] = [
 
 const ProjectUI = () => {
     return (
-        <section id='projects' className='section-container'>
-            <h1 className='section-title'>Projects</h1>
+        <section id='projects' className='p-10 gap-15 w-full flex flex-col items-center justify-center relative bg-white dark:bg-black'>
+            <h1 className='text-4xl font-bold bg-gradient-to-r from-blue-500 via-blue-400 to-violet-600 bg-clip-text text-transparent text-center'>Projects</h1>
             {/* Content */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-7xl w-full">
                 {projects.map((project, index) => (
-                    <article key={index} className='project-card'>
+                    <article key={index} className='hover:shadow-md gap-4 grid grid-cols-[1fr_auto] auto-cols-max dark:bg-zinc-900 hover:text-blue-500 dark:text-white transition-all duration-300 px-5 py-5 border rounded-md border-gray-400/20'>
                         <h2 className='col-span-1 text-xl'>{project.title}</h2>
                         <span className={`col-span-1 text-xs w-fit px-3 py-1 font-medium rounded-xl ${project.status.style} h-fit`}>{project.status.status}</span>
                         <p className='col-span-2 text-md text-slate-500'>{project.description}</p>
                         <ul className='col-span-2 flex flex-wrap gap-2 h-fit'>
                             {project.technologies.map((tech, techIndex) => (
-                                <li key={techIndex} className="tech-item">{tech}</li>
+                                <li key={techIndex} className='text-sm text-blue-700 bg-blue-200 border border-blue-400 rounded-xl px-2 dark:text-white dark:bg-zinc-950 dark:border-transparent'>{tech}</li>
                             ))}
                         </ul>
                         <div className='col-span-2 flex gap-2'>
                             {project.repoLink && (
-                                <Button className="btn-repo" href={project.repoLink} target='_blank' rel='noopener noreferrer'>
+                                <Button className='flex items-center justify-center w-full border rounded-md py-1 text-black border-gray-400/80 bg-white hover:bg-gray-300 dark:bg-black dark:border-transparent dark:text-white dark:hover:bg-gray-800 transition-all duration-300' href={project.repoLink} target='_blank' rel='noopener noreferrer'>
                                     <LuGithub className='inline h-4 w-4 mr-1' /> <p className='text-sm'>Repository</p>
                                 </Button>
                             )}

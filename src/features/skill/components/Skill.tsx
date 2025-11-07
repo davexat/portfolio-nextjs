@@ -3,8 +3,8 @@ import TechItem from './tech';
 const SkillUI = ({ isDark } : { isDark: boolean }) => {
 
     return (
-        <section id='skills' className='section-container dark:text-slate-400'>
-            <h2 className='section-title'>Skills & Technologies</h2>
+        <section id='skills' className='p-10 gap-15 w-full flex flex-col items-center justify-center relative bg-white dark:bg-black text-slate-900 dark:text-slate-400'>
+            <h2 className='text-4xl font-bold bg-gradient-to-r from-blue-500 via-blue-400 to-violet-600 bg-clip-text text-transparent text-center'>Skills & Technologies</h2>
             <span className='flex flex-wrap max-w-7xl gap-10'>
             <article className='flex flex-col grow-1 shrink-1 basis-full md:basis-1/3 xl:basis-1/4 gap-5'>
                 <h3 className='text-2xl font-semibold text-center'>Data Analysis</h3>

@@ -4,6 +4,7 @@ import { Hero } from '@/features/hero';
 import { About } from '@/features/about';
 import { Skill } from '@/features/skill';
 import { Project } from '@/features/project';
+import { Experience } from '@/features/experience';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -38,6 +39,7 @@ export default function Home() {
             <About />
             <Skill isDark={isDark} />
             <Project />
+            <Experience />
         </>
     );
 }

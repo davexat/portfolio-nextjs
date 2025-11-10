@@ -65,13 +65,13 @@ const projects: Project[] = [
 const ProjectUI = () => {
     return (
         <section id='projects' className='layout-section bg-section color-text'>
-            <h1 className='text-title gradient-title'>Projects</h1>
+            <h2 className='text-title gradient-title'>Projects</h2>
             {/* Content */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-7xl w-full">
                 {projects.map((project, index) => (
                     <article key={index} className='hover:shadow-md gap-4 flex flex-col justify-between size-button border rounded-md border-button bg-button transitions'>
                         <span className='flex justify-between items-center'>
-                            <h2 className='text-xl'>{project.title}</h2>
+                            <h3 className='text-xl'>{project.title}</h3>
                             <span className={`text-xs px-3 py-1 font-medium rounded-xl ${project.status.style}`}>{project.status.status}</span>
                         </span>
                         <p className='color-text'>{project.description}</p>

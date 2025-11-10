@@ -1,12 +1,12 @@
 export default function About() {
     return (
         <section id='about' className='layout-section bg-section'>
-            <h1 className='text-title gradient-title'>About Me</h1>
+            <h2 className='text-title gradient-title'>About Me</h2>
             {/* Content */}
             <div className='flex flex-col w-full xl:flex-row max-w-7xl text-xl text-justify justify-center items-center color-text gap-10'>
                 <div className="max-w-xs xl:max-w-2/5 xl:pr-15">
                     <span className="shadow-lg xl:max-w-sm items-stretch">
-                        <img src='/sample.jpg' alt='Profile Picture'/>
+                        <img src='https://placehold.co/400x400' alt='Profile Picture'/>
                     </span>
                 </div>
                 <div className="flex flex-col gap-5 w-full xl:max-w-1/2">

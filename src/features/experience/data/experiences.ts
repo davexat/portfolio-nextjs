@@ -1,11 +1,11 @@
-export type Expereience = {
+export type Experience = {
     title: string;
     institution: string;
     dateRange: string;
     description: string;
 }
 
-export const experiences: Expereience[] = [
+export const getExperiences = (): Experience[] => [
     {
         title: "Teaching Assistant - Software Design",
         institution: "Escuela Superior Politécnica del Litoral (ESPOL)",
@@ -19,3 +19,5 @@ export const experiences: Expereience[] = [
         description: "Assisted students in the Programming Fundamentals course by reviewing and grading assignments, providing feedback, and offering support on programming concepts and practices during office hours."
     },
 ];
+
+export default getExperiences;

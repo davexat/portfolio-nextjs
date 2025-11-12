@@ -58,6 +58,14 @@ body {
     @apply hover:bg-blue-700 dark:hover:bg-blue-600;
   }
 
+  .bg-gradient::before {
+    background-image: linear-gradient(90deg, #2563eb 0%, #6366f1 50%, #7c3aed 100%);
+  }
+
+  .dark .bg-gradient::before {
+    background-image: linear-gradient(90deg, #3b82f6 0%, #818cf8 50%, #8b5cf6 100%);
+  }
+
   /* Layout */
   .layout-header {
     @apply fixed top-0 left-0 right-0 z-50;

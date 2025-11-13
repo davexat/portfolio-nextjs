@@ -22,7 +22,7 @@ const ExperienceUI = () => {
     return (
         <section id='experience' className='layout-section bg-section color-text'>
             <h2 className='text-title gradient-title'>Education & Experience</h2>
-            <span className='max-w-7xl lg:max-w-5xl w-full flex flex-col gap-4'>
+            <span className='max-w-7xl lg:max-w-5xl w-full flex flex-col gap-8'>
                 {timelineSections.map((section) => (
                     <TimelineSection
                         key={section.title}

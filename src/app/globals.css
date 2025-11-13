@@ -47,7 +47,7 @@ body {
   }
 
   .bg-button-hover {
-    @apply hover:bg-blue-300/80 dark:hover:bg-blue-900/90;
+    @apply hover:bg-blue-100/80 dark:hover:bg-blue-900/90;
   }
 
   .bg-button-contrast {
@@ -64,26 +64,6 @@ body {
 
   .bg-gradient-before {
     @apply before:bg-linear-to-b before:from-blue-600 before:via-indigo-500 before:to-violet-600 dark:before:from-blue-500 dark:before:via-indigo-400 dark:before:to-violet-400;
-  }
-
-  .bg-gradient-border {
-    border-image: linear-gradient(90deg, #2563eb, #6366f1, #7c3aed) 1;
-  }
-
-  .bg-grad {
-    background: linear-gradient(45deg, #4facfe, #00f2fe) padding-box;
-  }
-
-  .locura::before {
-    -webkit-mask:
-      linear-gradient(#fff 0 0) content-box,
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-  }
-
-  .dark .locura::before {
-    background: linear-gradient(45deg, #3b82f6, #818cf8, #a78bfa);
   }
 
   /* Layout */

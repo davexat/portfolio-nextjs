@@ -18,7 +18,7 @@ export const getExperiences = (): Experience[] => [
         institution: "Escuela Superior Politécnica del Litoral (ESPOL)",
         dateRange: "Sep 2024 - Jan 2025",
         description:
-            "Assisted students in understanding object-oriented design principles, UML modeling, and software architecture. Reviewed and evaluated projects, guided students through best practices in code structure and design patterns, and supported instructors in course delivery."
+            "Assisted students in understanding object-oriented design principles, UML modeling, and software architecture. Reviewed and evaluated practices, guided students through best practices in code structure and design patterns, and supported instructors in course delivery."
     },
 ];
 

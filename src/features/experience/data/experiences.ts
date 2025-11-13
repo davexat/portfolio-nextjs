@@ -10,14 +10,24 @@ export const getExperiences = (): Experience[] => [
         title: "Teaching Assistant - Programming Fundamentals",
         institution: "Escuela Superior Politécnica del Litoral (ESPOL)",
         dateRange: "May 2025 - Feb 2026",
-        description: "Assisted students in the Programming Fundamentals course by reviewing and grading assignments, providing feedback, and offering support on programming concepts and practices during office hours."
+        description:
+            "Supported over 100 students in mastering foundational programming concepts. Responsibilities included grading assignments, providing constructive feedback, clarifying theoretical and practical topics during office hours, and contributing to the improvement of course materials."
     },
     {
         title: "Teaching Assistant - Software Design",
         institution: "Escuela Superior Politécnica del Litoral (ESPOL)",
         dateRange: "Sep 2024 - Jan 2025",
-        description: "Assisted students in the Software Design course by reviewing and grading assignments, providing feedback, and offering support on programming and design principles during office hours."
+        description:
+            "Assisted students in understanding object-oriented design principles, UML modeling, and software architecture. Reviewed and evaluated projects, guided students through best practices in code structure and design patterns, and supported instructors in course delivery."
     },
 ];
 
-export default getExperiences;
+export const getEducation = (): Experience[] => [
+    {
+        title: "Bachelor's Degree in Computer Science",
+        institution: "Escuela Superior Politécnica del Litoral (ESPOL)",
+        dateRange: "May 2023 - Present",
+        description:
+            "Undergraduate program focused on software engineering, algorithms, data structures, and computer systems. Coursework includes databases, artificial intelligence, and data analysis. Expected graduation: Dec 2027."
+    },
+];

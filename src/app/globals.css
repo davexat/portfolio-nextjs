@@ -58,12 +58,32 @@ body {
     @apply hover:bg-blue-700 dark:hover:bg-blue-600;
   }
 
-  .bg-gradient::before {
-    background-image: linear-gradient(90deg, #2563eb 0%, #6366f1 50%, #7c3aed 100%);
+  .bg-gradient {
+    @apply bg-linear-to-r from-blue-600 dark:from-blue-500 via-indigo-500 dark:via-indigo-400 to-violet-600 dark:to-violet-400;
   }
 
-  .dark .bg-gradient::before {
-    background-image: linear-gradient(90deg, #3b82f6 0%, #818cf8 50%, #8b5cf6 100%);
+  .bg-gradient-before {
+    @apply before:bg-linear-to-b before:from-blue-600 before:via-indigo-500 before:to-violet-600 dark:before:from-blue-500 dark:before:via-indigo-400 dark:before:to-violet-400;
+  }
+
+  .bg-gradient-border {
+    border-image: linear-gradient(90deg, #2563eb, #6366f1, #7c3aed) 1;
+  }
+
+  .bg-grad {
+    background: linear-gradient(45deg, #4facfe, #00f2fe) padding-box;
+  }
+
+  .locura::before {
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .dark .locura::before {
+    background: linear-gradient(45deg, #3b82f6, #818cf8, #a78bfa);
   }
 
   /* Layout */
@@ -81,6 +101,10 @@ body {
 
   .layout-section {
     @apply p-10 gap-15 w-full flex flex-col items-center justify-center;
+  }
+
+  .layout-before {
+    @apply before:content-[''] before:absolute before:w-[2] before:left-[29] before:top-0 before:bottom-0;
   }
 
   /* Estilos visuales */
@@ -109,7 +133,7 @@ body {
   }
 
   .border-button-hover {
-    @apply hover:border-blue-400 hover:shadow-md;
+    @apply hover:border-blue-500 hover:dark:border-blue-400 hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:shadow-md;
   }
 
   .layout-list-skill {

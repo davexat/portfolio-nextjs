@@ -13,7 +13,7 @@ export type SkillSection = {
     listClass: string;
 }
 
-const titleClassDefault = 'text-2xl text-center';
+const titleClassDefault = 'text-3xl text-center gradient-title';
 
 export const getSkillSections = (isDark: boolean): SkillSection[] => [
     {

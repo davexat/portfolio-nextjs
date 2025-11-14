@@ -5,6 +5,7 @@ import { About } from '@/features/about';
 import { Skill } from '@/features/skill';
 import { Project } from '@/features/project';
 import { Experience } from '@/features/experience';
+import { Contact } from '@/features/contact';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
             <Skill isDark={isDark} />
             <Project />
             <Experience />
+            <Contact />
         </>
     );
 }

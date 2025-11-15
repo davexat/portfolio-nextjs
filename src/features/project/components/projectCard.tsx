@@ -18,7 +18,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <p className='color-text'>{project.description}</p>
             <ul className='flex flex-wrap gap-2'>
                 {project.technologies.map((tech, techIndex) => (
-                    <li key={techIndex} className='text-sm border border-button rounded-xl px-2'>
+                    <li key={techIndex} className='text-sm border border-button bg-blue-200 color-text dark:bg-black rounded-xl px-2'>
                         {tech}
                     </li>
                 ))}

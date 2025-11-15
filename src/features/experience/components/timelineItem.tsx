@@ -18,12 +18,13 @@ const TimelineItem = ({ title, institution, dateRange, description, icon }: Time
         </span>
       </span>
       <article className='flex flex-col size-button border rounded-md border-button bg-button transitions gap-2 border-button-hover hover:translate-y-[-5px]'>
-        <span className='flex justify-between items-center'>
+        <span className='flex flex-col justify-between items-left lg:flex-row'>
           <span className=''>
             <h4 className='text-2xl gradient-title'>{title}</h4>
-            <span className='text-lg'>{institution}</span>
+            <p className='text-lg'>{institution}</p>
+            <span className="opacity-50 lg:hidden">{dateRange}</span>
           </span>
-          <span className='flex gap-2 items-center opacity-50'>
+          <span className='hidden gap-2 items-center opacity-50 justify-end lg:flex'>
             <LuCalendar className='size-icon' />
             <span className=''>{dateRange}</span>
           </span>

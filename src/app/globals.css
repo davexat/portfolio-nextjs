@@ -113,7 +113,7 @@ body {
   }
 
   .border-button {
-    @apply border-zinc-400/20;
+    @apply border-zinc-800/20 dark:border-zinc-400/20;
   }
 
   .border-button-hover {

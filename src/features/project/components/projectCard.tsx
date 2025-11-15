@@ -9,9 +9,9 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => {
     return (
         <article className='hover:shadow-md gap-4 flex flex-col justify-between size-button border rounded-md border-button border-button-hover bg-button hover:translate-y-[-5px] transitions'>
-            <span className='flex justify-between items-center'>
+            <span className='flex justify-between gap-4 items-center'>
                 <h3 className='text-2xl gradient-title'>{project.title}</h3>
-                <span className={`text-xs px-3 py-1 font-medium rounded-xl ${project.status.style}`}>
+                <span className={`text-xs px-3 py-1 font-medium rounded-xl shrink-0 ${project.status.style}`}>
                     {project.status.status}
                 </span>
             </span>

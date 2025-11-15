@@ -78,7 +78,7 @@ const ContactUI = () => {
                             <span className='gradient-title text-xl'>Message:</span>
                             <textarea
                                 name="message"
-                                className='border border-button border-button-hover bg-button color-text p-3 rounded-md transitions style-textarea min-h-[120px] resize-none'
+                                className='border border-button border-button-hover bg-button color-text p-3 rounded-md transitions style-input min-h-[120px] resize-none'
                                 placeholder="Write your message here..."
                             />
                         </label>

@@ -124,10 +124,6 @@ body {
     @apply focus:border-violet-500 focus:ring-violet-500/50 dark:focus:border-violet-400 dark:focus:ring-violet-400/50 outline-none;
   }
 
-  .style-textarea {
-    @apply focus:border-violet-500 focus:ring-violet-500/50 dark:focus:border-violet-400 dark:focus:ring-violet-400/50 outline-none min-h-[120px];
-  }
-
   /* Tamaños */
   .text-header {
     @apply text-2xl;

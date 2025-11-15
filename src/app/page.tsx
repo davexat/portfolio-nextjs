@@ -36,7 +36,7 @@ export default function Home() {
     return (
         <>
             <Header isDark={isDark} toggleTheme={toggleTheme} />
-            <Hero />
+            <Hero isDark={isDark} />
             <About />
             <Skill isDark={isDark} />
             <Project />

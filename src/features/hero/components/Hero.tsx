@@ -1,5 +1,5 @@
 import { LuArrowDown, LuMail, LuGithub, LuLinkedin } from 'react-icons/lu';
-import Button from '../../../components/ui/button';
+import Button from '../../shared/components/ui/Button';
 import { scrollToSection } from '@/lib/utils';
 
 const Class = 'flex items-center rounded-md';

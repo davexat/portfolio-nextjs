@@ -1,5 +1,5 @@
 import { LuGithub, LuExternalLink } from 'react-icons/lu';
-import Button from '../../../components/ui/button';
+import Button from '../../shared/components/ui/Button';
 import { Project } from '../data/projects';
 
 interface ProjectCardProps {

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { createFlowBackground } from '../lib/flowBrackground';
+import { createFlowBackground } from '../../../lib/flowBrackground';
 
 type FlowOptions = Partial<Parameters<typeof createFlowBackground>[1]>;
 

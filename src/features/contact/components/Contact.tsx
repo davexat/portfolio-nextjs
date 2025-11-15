@@ -1,5 +1,5 @@
 "use client";
-import Button from '../../../components/ui/button';
+import Button from '../../shared/components/ui/Button';
 
 const ContactUI = () => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

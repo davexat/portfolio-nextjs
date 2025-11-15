@@ -13,7 +13,7 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPro
     return (
       <Element
         ref={ref as any}
-        className={`${className}`}
+        className={`${className} cursor-pointer`}
         {...(href ? { href } : {})}
         {...props}
       >

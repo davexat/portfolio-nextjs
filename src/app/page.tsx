@@ -6,6 +6,7 @@ import { Skill } from '@/features/skill';
 import { Project } from '@/features/project';
 import { Experience } from '@/features/experience';
 import { Contact } from '@/features/contact';
+import { Footer } from '@/features/footer';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -42,6 +43,7 @@ export default function Home() {
             <Project />
             <Experience />
             <Contact />
+            <Footer />
         </>
     );
 }

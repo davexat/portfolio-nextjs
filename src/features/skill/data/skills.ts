@@ -37,7 +37,7 @@ export const getSkillSections = (isDark: boolean): SkillSection[] => [
         ]
     },
     {
-        title: "Software Development",
+        title: "Web Development",
         titleClass: titleClassDefault,
         articleClass: "flex flex-col grow shrink basis-full md:basis-1/3 xl:basis-1/4 gap-5",
         listClass: "layout-list-skill",
@@ -52,7 +52,6 @@ export const getSkillSections = (isDark: boolean): SkillSection[] => [
             { icon: "/icons/nodejs.png", color: "green", text: "Node.js" },
             { icon: "/icons/nextjs.png", color: "slate", text: "Next.js" },
             { icon: "/icons/django.png", color: "green", text: "Django" },
-            { icon: "/icons/lovable.png", color: "pink", text: "Lovable" },
             { icon: "/icons/figma.png", color: "purple", text: "Figma" },
         ]
     },
@@ -69,6 +68,7 @@ export const getSkillSections = (isDark: boolean): SkillSection[] => [
             { icon: "/icons/markdown.png", color: "slate", text: "Markdown", changeMode: isDark },
             { icon: "/icons/c.png", color: "indigo", text: "C" },
             { icon: "/icons/dataspell.png", color: "slate", text: "DataSpell" },
+            { icon: "/icons/lovable.png", color: "pink", text: "Lovable" },
             { icon: "/icons/visualstudiocode.png", color: "blue", text: "VSC" },
         ]
     }

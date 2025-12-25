@@ -40,14 +40,7 @@ export const projects: Project[] = [
         technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
         liveLink: "https://davexat.vercel.app",
         repoLink: "https://github.com/davexat/portfolio-nextjs",
-        status: statuses[1],
-    },
-    {
-        title: "Telco Churn Predictor",
-        description: "A predictive analytics dashboard that identifies at-risk customers, visualizes churn patterns, and provides actionable insights for retention.",
-        technologies: ["Pandas", "XGBoost", "SHAP", "Power BI", "Seaborn"],
-        repoLink: "https://github.com/davexat/telco-churn-prediction-powerbi",
-        status: statuses[1],
+        status: statuses[0],
     },
     {
         title: "Django API Suite",

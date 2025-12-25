@@ -52,7 +52,7 @@ const ContactUI = () => {
                             <input
                                 type="text"
                                 name="name"
-                                className='border border-button border-button-hover bg-button color-text p-3 rounded-md transitions style-input'
+                                className='border border-button border-button-hover bg-button  p-3 rounded-md transitions style-input'
                                 placeholder="Your name"
                             />
                         </label>
@@ -61,7 +61,7 @@ const ContactUI = () => {
                             <input
                                 type="email"
                                 name="email"
-                                className='border border-button border-button-hover bg-button color-text p-3 rounded-md transitions style-input'
+                                className='border border-button border-button-hover bg-button  p-3 rounded-md transitions style-input'
                                 placeholder="your.email@example.com"
                             />
                         </label>
@@ -70,7 +70,7 @@ const ContactUI = () => {
                             <input
                                 type="text"
                                 name="subject"
-                                className='border border-button border-button-hover bg-button color-text p-3 rounded-md transitions style-input'
+                                className='border border-button border-button-hover bg-button  p-3 rounded-md transitions style-input'
                                 placeholder="Subject of your message"
                             />
                         </label>
@@ -78,7 +78,7 @@ const ContactUI = () => {
                             <span className='gradient-title text-xl'>Message:</span>
                             <textarea
                                 name="message"
-                                className='border border-button border-button-hover bg-button color-text p-3 rounded-md transitions style-input min-h-[120px] resize-none'
+                                className='border border-button border-button-hover bg-button  p-3 rounded-md transitions style-input min-h-[120px] resize-none'
                                 placeholder="Write your message here..."
                             />
                         </label>
@@ -92,7 +92,7 @@ const ContactUI = () => {
                         allowFullScreen={true} loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade">
                     </iframe>
-                    <p className='opacity-80 text-center'>If you want to meet me in person, we can schedule a meeting from Monday to Thursday at the Facultad de Ingeniería en Electricidad y Computación (FIEC) - ESPOL. Feel free to reach out to coordinate a time!
+                    <p className='opacity-80 text-center '>If you want to meet me in person, we can schedule a meeting from Monday to Thursday at the Facultad de Ingeniería en Electricidad y Computación (FIEC) - ESPOL. Feel free to reach out to coordinate a time!
                     </p>
                 </span>
             </span>

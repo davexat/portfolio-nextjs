@@ -7,7 +7,7 @@ const HeroUI = ({ isDark }: { isDark: boolean }) => {
     return (
         <section id='home' className='hero'>
             <ParticlesBackground isDark={isDark} />
-            <span className='flex-center flex-col gap-10 color-text z-1'>
+            <span className='flex-center flex-col gap-10  z-1'>
                 <h1 className='text-hero gradient-title'>David Sandoval</h1>
 
                 <p className='text-center text-2xl max-w-5xl p-2'>Full Stack Developer, Data Analyst & AI Enthusiast. I enjoy learning about new technologies and applying them to solve real-world problems.</p>

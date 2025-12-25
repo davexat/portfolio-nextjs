@@ -1,7 +1,7 @@
 export default function About() {
     return (
-        <section id='about' className='section'>
-            <h2 className='text-title gradient-title'>About Me</h2>
+        <section id='about' className='base-section'>
+            <h2 className='gradient title-section'>About Me</h2>
             {/* Content */}
             <div className='flex flex-col w-full xl:flex-row max-w-7xl text-xl text-center xl:text-justify justify-center items-center gap-10'>
                 <span className="max-w-xs xl:max-w-2/5 xl:pr-15">

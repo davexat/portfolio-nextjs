@@ -31,17 +31,26 @@ body {
     @apply bg-neutral-50 dark:bg-black;
   }
 
-  .section {
+  .base-section {
     /* Layout */
     @apply p-10 gap-15 w-full flex flex-col items-center justify-center;
     /* Fondo */
     @apply bg-slate-50 dark:bg-slate-950;
+  }
+
+  .title-section {
+    @apply bg-clip-text text-transparent;
+    @apply text-4xl;
   }
 }
 
 @layer utilities {
   .color-text-invert {
     @apply text-slate-100 dark:text-slate-900;
+  }
+
+  .gradient {
+    @apply bg-linear-to-r from-blue-600 dark:from-blue-500 via-indigo-500 dark:via-indigo-400 to-violet-600 dark:to-violet-400;
   }
 
   /* Fondos */
@@ -125,11 +134,6 @@ body {
   /* Lista de skills */
   .layout-list-skill {
     @apply flex flex-wrap justify-center items-center gap-5;
-  }
-
-  /* Gradiente de texto */
-  .gradient-title {
-    @apply bg-linear-to-r from-blue-600 dark:from-blue-500 via-indigo-500 dark:via-indigo-400 to-violet-600 dark:to-violet-400 bg-clip-text text-transparent;
   }
 
   /* Bordes navbar */

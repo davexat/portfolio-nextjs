@@ -39,8 +39,11 @@ body {
   }
 
   .title-section {
-    @apply bg-clip-text text-transparent;
-    @apply text-4xl;
+    @apply text-4xl text-center bg-clip-text text-transparent;
+  }
+
+  .subtitle-section {
+    @apply text-3xl text-center bg-clip-text text-transparent;
   }
 }
 

@@ -6,7 +6,7 @@ const SkillUI = ({ isDark }: { isDark: boolean }) => {
     const skillSections = getSkillSections(isDark);
 
     return (
-        <section id='skills' className='section'>
+        <section id='skills' className='base-section'>
             <h2 className='gradient title-section'>Skills & Tools</h2>
             <span className='flex flex-wrap max-w-7xl gap-10'>
                 {skillSections.map((section, key) => (

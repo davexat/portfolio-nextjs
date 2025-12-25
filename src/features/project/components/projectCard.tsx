@@ -25,25 +25,25 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             </ul>
             <div className='flex gap-2'>
                 {project.repoLink && (
-                    <Button 
-                        className='flex items-center justify-center w-full border rounded-md py-1 text-black border-gray-400/80 bg-white hover:bg-gray-400/20 dark:bg-black dark:border-transparent dark:text-white dark:hover:bg-blue-400/20 transitions' 
-                        href={project.repoLink} 
-                        target='_blank' 
+                    <Button
+                        className='flex items-center justify-center w-full bg-button-repo transitions'
+                        href={project.repoLink}
+                        target='_blank'
                         rel='noopener noreferrer'
                     >
-                        <LuGithub className='inline h-4 w-4 mr-1' /> 
+                        <LuGithub className='inline h-4 w-4 mr-1' />
                         <p className='text-sm'>Repository</p>
                     </Button>
                 )}
                 {project.liveLink && (
-                    <Button 
-                        className='flex items-center justify-center w-full rounded-md py-1 overflow-hidden bg-button-contrast bg-button-contrast-hover transitions text-white' 
-                        href={project.liveLink} 
-                        target='_blank' 
+                    <Button
+                        className='flex items-center justify-center w-full bg-button-live transitions'
+                        href={project.liveLink}
+                        target='_blank'
                         rel='noopener noreferrer'
                     >
                         <span className="flex items-center gap-1">
-                            <LuExternalLink className="h-4 w-4 mr-1" /> 
+                            <LuExternalLink className="h-4 w-4 mr-1" />
                             <p className='text-sm'>Live Demo</p>
                         </span>
                     </Button>

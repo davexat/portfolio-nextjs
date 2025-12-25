@@ -70,6 +70,7 @@ export const getSkillSections = (isDark: boolean): SkillSection[] => [
             { icon: "/icons/dataspell.png", color: "slate", text: "DataSpell" },
             { icon: "/icons/lovable.png", color: "pink", text: "Lovable" },
             { icon: "/icons/visualstudiocode.png", color: "blue", text: "VSC" },
+            { icon: "/icons/n8n.png", color: "pink", text: "n8n" },
         ]
     }
 ];

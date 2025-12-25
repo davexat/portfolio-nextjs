@@ -35,7 +35,7 @@ const ContactUI = () => {
     };
 
     return (
-        <section id='contact' className='layout-section bg-section color-text'>
+        <section id='contact' className='section'>
             <h2 className='text-title gradient-title'>Contact Me</h2>
             {/* Content */}
             <span className='max-w-7xl lg:max-w-5xl w-full flex flex-col gap-8 lg:flex-row justify-center'>
@@ -82,7 +82,7 @@ const ContactUI = () => {
                                 placeholder="Write your message here..."
                             />
                         </label>
-                        <Button type="submit" className='mt-2 layout-button border border-button border-button-hover bg-button-contrast bg-button-contrast-hover p-2 text-white transitions'>Send</Button>
+                        <Button type="submit" className='mt-2 py-1 rounded-md bg-button-live transitions'>Send</Button>
                     </form>
                 </span>
                 <span className='flex flex-col gap-4 w-full'>

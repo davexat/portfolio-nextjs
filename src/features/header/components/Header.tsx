@@ -26,7 +26,7 @@ export default function Header({ isDark, toggleTheme }: Props) {
   };
 
   return (
-    <header className="bg-header layout-header style-header transitions">
+    <header className="header transitions">
       <div className="flex justify-between items-center mx-auto px-5 md:px-10 py-4 max-w-7xl color-text">
         <p className="text-header gradient-title">
           David Sandoval

@@ -33,7 +33,7 @@ body {
 
   .base-section {
     /* Layout */
-    @apply p-10 gap-15 w-full flex flex-col items-center justify-center transition-all duration-300;
+    @apply p-10 gap-5 sm:gap-10 w-full flex flex-col items-center justify-center transition-all duration-300;
     /* Fondo */
     @apply bg-slate-50 dark:bg-slate-950;
   }
@@ -43,7 +43,7 @@ body {
   }
 
   .title-section {
-    @apply text-4xl text-center bg-clip-text text-transparent;
+    @apply text-3xl sm:text-4xl text-center bg-clip-text text-transparent;
   }
 
   .subtitle-section {
@@ -62,7 +62,8 @@ body {
     @apply text-center text-xl sm:text-2xl max-w-5xl p-2;
   }
 
-  .text-button {
+  .text-button,
+  .info-text {
     @apply text-base sm:text-xl;
   }
 

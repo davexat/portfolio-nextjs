@@ -51,7 +51,7 @@ body {
   }
 
   .subheading-section {
-    @apply text-2xl text-center bg-clip-text text-transparent;
+    @apply text-xl sm:text-2xl text-left bg-clip-text text-transparent;
   }
 
   .title-clip {
@@ -65,6 +65,10 @@ body {
   .text-button,
   .info-text {
     @apply text-base sm:text-xl;
+  }
+
+  .detail-text {
+    @apply text-sm sm:text-base;
   }
 
 }
@@ -123,6 +127,8 @@ body {
     @apply rounded-md py-1 text-white shadow-md;
     @apply bg-blue-600 hover:bg-blue-700 shadow-blue-600/10;
     @apply dark:hover:bg-blue-500 dark:shadow-blue-500/20;
+    /* Texto */
+    @apply text-sm sm:text-base;
   }
 
   /* Boton repository */
@@ -130,6 +136,8 @@ body {
     @apply rounded-md py-1 border bg-white;
     @apply text-slate-700 border-slate-300 hover:bg-slate-100;
     @apply dark:bg-slate-800 dark:text-slate-200 dark:border-slate-700 dark:hover:bg-slate-700;
+    /* Texto */
+    @apply text-sm sm:text-base;
   }
 
   /* Timeline */

@@ -15,10 +15,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                     {project.status.status}
                 </span>
             </span>
-            <p>{project.description}</p>
+            <p className='detail-text'>{project.description}</p>
             <ul className='flex flex-wrap gap-2'>
                 {project.technologies.map((tech, techIndex) => (
-                    <li key={techIndex} className='text-sm border border-slate-200 dark:border-slate-800 bg-blue-200 dark:bg-black rounded-xl px-2'>
+                    <li key={techIndex} className='text-xs sm:text-sm border border-slate-200 dark:border-slate-800 bg-blue-200 dark:bg-black rounded-xl px-2'>
                         {tech}
                     </li>
                 ))}

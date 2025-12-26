@@ -13,11 +13,11 @@ const TimelineItem = ({ title, institution, dateRange, description, icon }: Time
   return (
     <span className='flex items-start gap-3'>
       <span className='flex items-center justify-center p-[2] rounded-full gradient z-1'>
-        <span className='block p-4 rounded-full bg-button'>
+        <span className='timeline-icon'>
           {icon}
         </span>
       </span>
-      <article className='flex flex-col size-button border rounded-md border-button bg-button transitions gap-2 border-button-hover hover:translate-y-[-5px]'>
+      <article className='flex flex-col my-container my-container-hover transitions gap-2 hover:translate-y-[-5px]'>
         <span className='flex flex-col justify-between items-left lg:flex-row'>
           <span className='flex flex-col gap-1'>
             <h4 className='gradient subheading-section text-left'>{title}</h4>

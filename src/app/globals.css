@@ -38,6 +38,10 @@ body {
     @apply bg-slate-50 dark:bg-slate-950;
   }
 
+  .title-hero {
+    @apply text-5xl sm:text-7xl text-center bg-clip-text text-transparent;
+  }
+
   .title-section {
     @apply text-4xl text-center bg-clip-text text-transparent;
   }
@@ -54,6 +58,13 @@ body {
     @apply bg-clip-text text-transparent;
   }
 
+  .hero-text {
+    @apply text-center text-xl sm:text-2xl max-w-5xl p-2;
+  }
+
+  .text-button {
+    @apply text-base sm:text-xl;
+  }
 
 }
 
@@ -67,7 +78,7 @@ body {
   /* Contenedor */
   .my-container {
     /* Layout */
-    @apply p-4;
+    @apply p-3 sm:p-4;
     /* Fondo */
     @apply bg-white dark:bg-slate-900;
     /* Borde */
@@ -82,7 +93,7 @@ body {
   /* Botones hero */
   .button-hero-principal {
     /* Layout */
-    @apply flex items-center justify-center p-4 rounded-md gap-2 shadow-md text-white;
+    @apply flex items-center justify-center p-3 sm:p-4 rounded-md gap-2 shadow-md text-white;
     /* Fondo */
     @apply bg-blue-600 hover:bg-blue-700 shadow-blue-600/10;
     @apply dark:hover:bg-blue-500 dark:shadow-blue-500/20;
@@ -90,7 +101,7 @@ body {
 
   .button-hero-icon {
     /* Layout */
-    @apply flex items-center justify-center p-4 rounded-md;
+    @apply flex items-center justify-center p-3 sm:p-4 rounded-md;
     /* Texto */
     @apply hover:text-blue-600 dark:hover:text-white;
     /* Sombra */
@@ -162,6 +173,6 @@ body {
 
   /* Tamaño iconos */
   .size-icon {
-    @apply w-6 h-6;
+    @apply h-5 w-5 sm:h-6 sm:w-6;
   }
 }

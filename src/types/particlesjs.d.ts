@@ -1,3 +1,3 @@
 interface Window {
-  particlesJS?: (id: string, config: any) => void;
+  particlesJS?: (id: string, config: object) => void;
 }

@@ -12,6 +12,7 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPro
 
     return (
       <Element
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ref={ref as any}
         className={`${className} cursor-pointer`}
         {...(href ? { href } : {})}
@@ -22,5 +23,7 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPro
     );
   }
 );
+
+Button.displayName = "Button";
 
 export default Button;

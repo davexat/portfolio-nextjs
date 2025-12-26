@@ -258,11 +258,9 @@ export function createFlowBackground(
     window.removeEventListener('pointerleave', onPointerEnd);
     window.removeEventListener('touchend', onPointerEnd);
     window.removeEventListener('scroll', onScroll);
-    mountEl.contains(canvas) && mountEl.removeChild(canvas);
-  }
-
-  function setOptions(next = {}) {
-    Object.assign(opts, next);
+    if (mountEl.contains(canvas)) {
+      mountEl.removeChild(canvas);
+    }
   }
 
   return destroy;

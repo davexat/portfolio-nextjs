@@ -13,17 +13,17 @@ const HeroUI = ({ isDark }: { isDark: boolean }) => {
                 <p className='text-center text-2xl max-w-5xl p-2'>Full Stack Developer, Data Analyst & AI Enthusiast. I enjoy learning about new technologies and applying them to solve real-world problems.</p>
 
                 <div className='flex-center gap-3'>
-                    <Button onClick={() => scrollToSection('#about')} className='layout-button gap-2 size-button bg-button-live transitions'>
+                    <Button onClick={() => scrollToSection('#about')} className='button-hero-principal transitions'>
                         <p className='text-xl leading-none'>Learn More</p>
                         <LuArrowDown className="size-icon" />
                     </Button>
-                    <Button href='https://github.com/tuusuario' target='_blank' rel='noopener noreferrer' className='layout-button size-button border-button border-button-hover bg-button bg-button-hero-hover transitions'>
+                    <Button href='https://github.com/tuusuario' target='_blank' rel='noopener noreferrer' className='button-hero-icon transitions'>
                         <LuGithub className='size-icon' />
                     </Button>
-                    <Button href='https://linkedin.com/in/tuusuario' target='_blank' rel='noopener noreferrer' className='layout-button size-button border-button border-button-hover bg-button bg-button-hero-hover transitions'>
+                    <Button href='https://linkedin.com/in/tuusuario' target='_blank' rel='noopener noreferrer' className='button-hero-icon transitions'>
                         <LuLinkedin className='size-icon' />
                     </Button>
-                    <Button onClick={() => scrollToSection('#contact')} className='layout-button size-button border-button border-button-hover bg-button bg-button-hero-hover transitions'>
+                    <Button onClick={() => scrollToSection('#contact')} className='button-hero-icon transitions'>
                         <LuMail className='size-icon' />
                     </Button>
                 </div>

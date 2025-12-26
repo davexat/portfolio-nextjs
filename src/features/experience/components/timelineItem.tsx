@@ -12,7 +12,7 @@ interface TimelineItemProps {
 const TimelineItem = ({ title, institution, dateRange, description, icon }: TimelineItemProps) => {
   return (
     <span className='flex items-start gap-3'>
-      <span className='flex items-center justify-center p-[2] rounded-full bg-gradient z-1'>
+      <span className='flex items-center justify-center p-[2] rounded-full gradient z-1'>
         <span className='block p-4 rounded-full bg-button'>
           {icon}
         </span>

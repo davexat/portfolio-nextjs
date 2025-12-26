@@ -9,7 +9,7 @@ const FooterUI = () => {
                     <SocialButton key={social.name} social={social} />
                 ))}
             </div>
-            <p className='text-lg'> © {new Date().getFullYear()} David Sandoval. All rights reserved. </p>
+            <p className='info-text'> © {new Date().getFullYear()} David Sandoval. All rights reserved. </p>
         </footer>
     )
 };

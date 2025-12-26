@@ -22,11 +22,11 @@ const TimelineItem = ({ title, institution, dateRange, description, icon }: Time
           <span className='flex flex-col gap-1'>
             <h4 className='gradient subheading-section text-left'>{title}</h4>
             <p className='info-text'>{institution}</p>
-            <span className="opacity-50 lg:hidden">{dateRange}</span>
+            <span className="opacity-50 lg:hidden detail-text">{dateRange}</span>
           </span>
           <span className='hidden gap-2 items-center opacity-50 justify-end lg:flex'>
             <LuCalendar className='size-icon' />
-            <span className='info-text'>{dateRange}</span>
+            <span className='detail-text'>{dateRange}</span>
           </span>
         </span>
         <p className='detail-text col-span-2'>{description}</p>

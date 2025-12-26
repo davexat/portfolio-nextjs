@@ -47,7 +47,7 @@ const ContactUI = () => {
                             autoComplete="off"
                             style={{ display: "none" }}
                         />
-                        <p className='gradient title-clip text-xl'>Name:</p>
+                        <p className='gradient title-clip info-text'>Name:</p>
                         <input
                             type="text"
                             name="name"
@@ -56,7 +56,7 @@ const ContactUI = () => {
                         />
                     </label>
                     <label className='flex flex-col gap-2'>
-                        <p className='gradient title-clip text-xl'>Email:</p>
+                        <p className='gradient title-clip info-text'>Email:</p>
                         <input
                             type="email"
                             name="email"
@@ -65,7 +65,7 @@ const ContactUI = () => {
                         />
                     </label>
                     <label className='flex flex-col gap-2'>
-                        <p className='gradient title-clip text-xl'>Subject:</p>
+                        <p className='gradient title-clip info-text'>Subject:</p>
                         <input
                             type="text"
                             name="subject"
@@ -74,7 +74,7 @@ const ContactUI = () => {
                         />
                     </label>
                     <label className='flex flex-col gap-2'>
-                        <p className='gradient title-clip text-xl'>Message:</p>
+                        <p className='gradient title-clip info-text'>Message:</p>
                         <textarea
                             name="message"
                             className='my-container my-container-hover transitions style-input min-h-[120px] resize-none'
@@ -90,7 +90,7 @@ const ContactUI = () => {
                         allowFullScreen={true} loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade">
                     </iframe>
-                    <p className='opacity-80 text-center '>If you want to meet me in person, we can schedule a meeting from Monday to Thursday at the Facultad de Ingeniería en Electricidad y Computación (FIEC) - ESPOL. Feel free to reach out to coordinate a time!
+                    <p className='opacity-80 text-center detail-text'>If you want to meet me in person, we can schedule a meeting from Monday to Thursday at the Facultad de Ingeniería en Electricidad y Computación (FIEC) - ESPOL. Feel free to reach out to coordinate a time!
                     </p>
                 </span>
             </span>

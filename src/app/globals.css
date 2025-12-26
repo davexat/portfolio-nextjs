@@ -45,6 +45,10 @@ body {
   .subtitle-section {
     @apply text-3xl text-center bg-clip-text text-transparent;
   }
+
+  .subheading-section {
+    @apply text-2xl text-center bg-clip-text text-transparent;
+  }
 }
 
 @layer utilities {
@@ -90,7 +94,7 @@ body {
   /* Boton repository */
   .bg-button-repo {
     @apply rounded-md py-1 border bg-white;
-    @apply text-slate-700 border-slate-300 hover:bg-slate-50;
+    @apply text-slate-700 border-slate-300 hover:bg-slate-100;
     @apply dark:bg-slate-800 dark:text-slate-200 dark:border-slate-700 dark:hover:bg-slate-700;
   }
 

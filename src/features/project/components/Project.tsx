@@ -3,8 +3,8 @@ import ProjectCard from './projectCard';
 
 const ProjectUI = () => {
     return (
-        <section id='projects' className='section'>
-            <h2 className='text-title gradient-title'>Projects</h2>
+        <section id='projects' className='base-section'>
+            <h2 className='gradient title-section'>Projects</h2>
             {/* Content */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-7xl w-full">
                 {projects.map((project, index) => (

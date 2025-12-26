@@ -12,7 +12,7 @@ interface TimelineItemProps {
 const TimelineItem = ({ title, institution, dateRange, description, icon }: TimelineItemProps) => {
   return (
     <span className='flex items-start gap-3'>
-      <span className='flex items-center justify-center p-[2] rounded-full gradient z-1'>
+      <span className='hidden sm:flex items-center justify-center p-[2] rounded-full gradient z-1'>
         <span className='timeline-icon'>
           {icon}
         </span>
@@ -21,15 +21,15 @@ const TimelineItem = ({ title, institution, dateRange, description, icon }: Time
         <span className='flex flex-col justify-between items-left lg:flex-row'>
           <span className='flex flex-col gap-1'>
             <h4 className='gradient subheading-section text-left'>{title}</h4>
-            <p className='text-lg'>{institution}</p>
+            <p className='info-text'>{institution}</p>
             <span className="opacity-50 lg:hidden">{dateRange}</span>
           </span>
           <span className='hidden gap-2 items-center opacity-50 justify-end lg:flex'>
             <LuCalendar className='size-icon' />
-            <span className=''>{dateRange}</span>
+            <span className='info-text'>{dateRange}</span>
           </span>
         </span>
-        <p className='text-md col-span-2'>{description}</p>
+        <p className='detail-text col-span-2'>{description}</p>
       </article>
     </span>
   );

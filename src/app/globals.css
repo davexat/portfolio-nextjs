@@ -143,9 +143,10 @@ body {
   /* Timeline */
   .timeline {
     /* Layout */
-    @apply relative flex flex-col gap-4 before:absolute before:w-[2] before:left-[29] before:top-0 before:bottom-0;
+    @apply relative flex flex-col gap-4;
     /* Linea */
-    @apply before:bg-linear-to-b before:from-blue-600 before:via-indigo-500 before:to-violet-600 dark:before:from-blue-500 dark:before:via-indigo-400 dark:before:to-violet-400;
+    @apply sm:before:absolute sm:before:w-[2] sm:before:left-[29] sm:before:top-0 sm:before:bottom-0;
+    @apply sm:before:bg-linear-to-b sm:before:from-blue-600 sm:before:via-indigo-500 sm:before:to-violet-600 dark:sm:before:from-blue-500 dark:sm:before:via-indigo-400 dark:sm:before:to-violet-400;
   }
 
   .timeline-icon {

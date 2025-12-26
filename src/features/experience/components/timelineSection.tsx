@@ -17,7 +17,7 @@ interface TimelineSectionProps {
 const TimelineSection = ({ title, items, icon }: TimelineSectionProps) => {
   return (
     <span className='flex flex-col gap-4'>
-      <h3 className='gradient subtitle-section text-left'>{title}</h3>
+      <h3 className='gradient subtitle-section text-center sm:text-left'>{title}</h3>
       <div className="timeline">
         {items.map((item, key) => (
           <TimelineItem

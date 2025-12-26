@@ -86,7 +86,7 @@ const ContactUI = () => {
                 <span className='flex flex-col gap-4 w-full'>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.4064209291404!2d-79.96815521872514!3d-2.1446767941770593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1763161812182!5m2!1ses!2sec"
-                        className='w-full h-full border border-button border-button-hover rounded-md min-h-[300px] md:min-h-[400px]'
+                        className='w-full h-full border rounded-md border-slate-200 dark:border-slate-800 min-h-[300px] md:min-h-[400px]'
                         allowFullScreen={true} loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade">
                     </iframe>

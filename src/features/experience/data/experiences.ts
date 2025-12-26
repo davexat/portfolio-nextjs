@@ -9,16 +9,16 @@ export const getExperiences = (): Experience[] => [
     {
         title: "Teaching Assistant - Programming Fundamentals",
         institution: "Escuela Superior Politécnica del Litoral (ESPOL)",
-        dateRange: "May 2025 - Feb 2026",
+        dateRange: "May 2025 - Jan 2026",
         description:
-            "Supported over 100 students in mastering foundational programming concepts. Responsibilities included grading assignments, providing constructive feedback, clarifying theoretical and practical topics during office hours, and contributing to the improvement of course materials."
+            "Supported over 100 students in mastering programming concepts. Responsibilities included grading assignments, providing feedback, clarifying theoretical and practical topics during office hours, and contributing to the improvement of course materials."
     },
     {
         title: "Teaching Assistant - Software Design",
         institution: "Escuela Superior Politécnica del Litoral (ESPOL)",
-        dateRange: "Sep 2024 - Jan 2025",
+        dateRange: "Oct 2024 - Jan 2025",
         description:
-            "Assisted students in understanding object-oriented design principles, UML modeling, and software architecture. Reviewed and evaluated practices, guided students through best practices in code structure and design patterns, and supported instructors in course delivery."
+            "Assisted students in understanding object-oriented SOLID principles, UML modeling, code refactoring and software architecture. Reviewed and evaluated practices, guided students through best practices in code structure and design patterns, and supported instructors in course delivery."
     },
 ];
 
@@ -28,6 +28,6 @@ export const getEducation = (): Experience[] => [
         institution: "Escuela Superior Politécnica del Litoral (ESPOL)",
         dateRange: "May 2023 - Present",
         description:
-            "Undergraduate program focused on software engineering, algorithms, data structures, and computer systems. Coursework includes databases, artificial intelligence, and data analysis. Expected graduation: Dec 2027."
+            "Undergraduate program focused on software engineering, algorithms, data structures, computer systems and artificial intelligence. Coursework includes databases, data analysis and machine learning. Expected graduation: May 2027."
     },
 ];

@@ -20,8 +20,8 @@ const ExperienceUI = () => {
     ];
 
     return (
-        <section id='experience' className='section '>
-            <h2 className='text-title gradient-title'>Education & Experience</h2>
+        <section id='experience' className='base-section'>
+            <h2 className='gradient title-section'>Education & Experience</h2>
             <span className='max-w-7xl lg:max-w-5xl w-full flex flex-col gap-8'>
                 {timelineSections.map((section) => (
                     <TimelineSection

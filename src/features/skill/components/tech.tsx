@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import React from 'react';
 import { hoverBorderColor, backgroundColor, hoverShadowColor } from "@/lib/utils";
 import Image from 'next/image';
 

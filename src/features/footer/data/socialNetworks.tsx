@@ -10,17 +10,17 @@ export interface SocialNetwork {
 export const socialNetworks: SocialNetwork[] = [
     {
         name: 'GitHub',
-        url: '',
+        url: 'https://github.com/davexat',
         icon: <LuGithub className='size-icon' />,
     },
     {
         name: 'LinkedIn',
-        url: '',
+        url: 'https://www.linkedin.com/in/david-sandoval-bernitta/',
         icon: <LuLinkedin className='size-icon' />,
     },
     {
         name: 'YouTube',
-        url: '',
+        url: 'https://www.youtube.com/@davexat',
         icon: <LuYoutube className='size-icon' />,
     },
 ];

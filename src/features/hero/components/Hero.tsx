@@ -17,10 +17,10 @@ const HeroUI = ({ isDark }: { isDark: boolean }) => {
                         <p className='text-xl leading-none'>Learn More</p>
                         <LuArrowDown className="size-icon" />
                     </Button>
-                    <Button href='https://github.com/tuusuario' target='_blank' rel='noopener noreferrer' className='button-hero-icon transitions'>
+                    <Button href='https://github.com/davexat' target='_blank' rel='noopener noreferrer' className='button-hero-icon transitions'>
                         <LuGithub className='size-icon' />
                     </Button>
-                    <Button href='https://linkedin.com/in/tuusuario' target='_blank' rel='noopener noreferrer' className='button-hero-icon transitions'>
+                    <Button href='https://www.linkedin.com/in/david-sandoval-bernitta/' target='_blank' rel='noopener noreferrer' className='button-hero-icon transitions'>
                         <LuLinkedin className='size-icon' />
                     </Button>
                     <Button onClick={() => scrollToSection('#contact')} className='button-hero-icon transitions'>

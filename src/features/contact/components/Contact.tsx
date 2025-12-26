@@ -51,7 +51,7 @@ const ContactUI = () => {
                         <input
                             type="text"
                             name="name"
-                            className='border-button border-button-hover bg-button p-3 rounded-md transitions style-input'
+                            className='my-container my-container-hover transitions style-input'
                             placeholder="Your name"
                         />
                     </label>
@@ -60,7 +60,7 @@ const ContactUI = () => {
                         <input
                             type="email"
                             name="email"
-                            className='border-button border-button-hover bg-button p-3 rounded-md transitions style-input'
+                            className='my-container my-container-hover transitions style-input'
                             placeholder="your.email@example.com"
                         />
                     </label>
@@ -69,7 +69,7 @@ const ContactUI = () => {
                         <input
                             type="text"
                             name="subject"
-                            className='border-button border-button-hover bg-button p-3 rounded-md transitions style-input'
+                            className='my-container my-container-hover transitions style-input'
                             placeholder="Subject of your message"
                         />
                     </label>
@@ -77,7 +77,7 @@ const ContactUI = () => {
                         <p className='gradient title-clip text-xl'>Message:</p>
                         <textarea
                             name="message"
-                            className='border-button border-button-hover bg-button p-3 rounded-md transitions style-input min-h-[120px] resize-none'
+                            className='my-container my-container-hover transitions style-input min-h-[120px] resize-none'
                             placeholder="Write your message here..."
                         />
                     </label>

@@ -79,9 +79,14 @@ body {
     @apply bg-violet-600 dark:bg-violet-400;
   }
 
-  /* Botones / Contenedores */
-  .bg-button {
+  /* Contenedores */
+  .my-container {
+    /* Layout */
+    @apply p-4;
+    /* Fondo */
     @apply bg-white dark:bg-slate-900;
+    /* Borde */
+    @apply border rounded-md border-slate-200 dark:border-slate-800;
   }
 
   /* Botones hero */

@@ -9,9 +9,9 @@ interface TechItemProps {
     changeMode?: boolean;
 }
 
-const TechItem = ({ icon, color, text, changeMode } : TechItemProps) => {
+const TechItem = ({ icon, color, text, changeMode }: TechItemProps) => {
     return (
-        <li className={clsx('group relative flex flex-col justify-center items-center size-button border rounded-md border-button bg-button transitions', hoverBorderColor(color), hoverShadowColor(color))}>
+        <li className={clsx('group relative flex-center flex-col my-container transitions', hoverBorderColor(color), hoverShadowColor(color))}>
             <span className="relative group-hover:-translate-y-8 transitions">
                 <img src={icon} alt={text} className={clsx('h-14 w-14', changeMode && 'invert')} />
                 <span className={clsx("absolute inset-0 rounded-md opacity-0 group-hover:opacity-30 blur-md -z-1 transitions", backgroundColor(color))}></span>

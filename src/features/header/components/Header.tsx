@@ -28,7 +28,7 @@ export default function Header({ isDark, toggleTheme }: Props) {
   return (
     <header className="header">
       <div className="flex justify-between items-center mx-auto px-5 md:px-10 py-4 max-w-7xl">
-        <p className="text-header gradient-title">
+        <p className="gradient subheading-section">
           David Sandoval
         </p>
         {/* Desktop Navigation */}
@@ -59,7 +59,7 @@ export default function Header({ isDark, toggleTheme }: Props) {
         <nav className="lg:hidden p-4 flex flex-col gap-1">
           {navItems.map((item) => (
             <Button
-              className="text-left opacity-80-100 rounded-sm  py-2 px-4 transitions"
+              className="text-left opacity-80-100 rounded-sm py-2 px-4 transitions bg-button-nav-hover"
               key={item.href}
               onClick={() => handleScrollToSection(item.href)}
             >

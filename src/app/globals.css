@@ -84,10 +84,15 @@ body {
     @apply bg-white dark:bg-slate-900;
   }
 
-  /* Botones hero */
+  /* Boton hero */
   .bg-button-hero-hover {
     @apply hover:bg-slate-50 hover:text-blue-600 hover:shadow-md hover:shadow-blue-500/10;
     @apply dark:hover:bg-slate-800 dark:hover:text-white dark:hover:shadow-black/40;
+  }
+
+  /* Boton nav */
+  .bg-button-nav-hover {
+    @apply hover:bg-slate-300/50 dark:hover:bg-slate-900/70;
   }
 
   /* Boton live demo */
@@ -102,18 +107,6 @@ body {
     @apply rounded-md py-1 border bg-white;
     @apply text-slate-700 border-slate-300 hover:bg-slate-100;
     @apply dark:bg-slate-800 dark:text-slate-200 dark:border-slate-700 dark:hover:bg-slate-700;
-  }
-
-  .bg-button-hover {
-    @apply hover:bg-blue-100/80 dark:hover:bg-blue-900/90;
-  }
-
-  .bg-button-contrast {
-    @apply bg-blue-600 dark:bg-blue-500;
-  }
-
-  .bg-button-contrast-hover {
-    @apply hover:bg-blue-700 dark:hover:bg-blue-600;
   }
 
   .bg-gradient {

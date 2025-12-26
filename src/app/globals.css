@@ -93,6 +93,7 @@ body {
   /* Contenedor hover */
   .my-container-hover {
     @apply hover:border-blue-500 hover:shadow-blue-500/20 hover:shadow-md;
+    @apply active:border-blue-500 active:shadow-blue-500/20 active:shadow-md;
   }
 
   /* Botones hero */

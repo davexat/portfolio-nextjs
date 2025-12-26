@@ -17,7 +17,7 @@ const TimelineItem = ({ title, institution, dateRange, description, icon }: Time
           {icon}
         </span>
       </span>
-      <article className='flex flex-col my-container my-container-hover transitions gap-2 hover:translate-y-[-5px]'>
+      <article className='flex flex-col my-container my-container-hover transitions gap-2 hover:translate-y-[-5px] active:translate-y-[-5px]'>
         <span className='flex flex-col justify-between items-left lg:flex-row'>
           <span className='flex flex-col gap-1'>
             <h4 className='gradient subheading-section text-left'>{title}</h4>

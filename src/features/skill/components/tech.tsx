@@ -12,11 +12,11 @@ interface TechItemProps {
 const TechItem = ({ icon, color, text, changeMode }: TechItemProps) => {
     return (
         <li className={clsx('group relative flex-center flex-col my-container transitions', hoverBorderColor(color), hoverShadowColor(color))}>
-            <span className="relative group-hover:-translate-y-8 transitions">
+            <span className="relative group-hover:-translate-y-8 group-active:-translate-y-8 transitions">
                 <Image src={icon} alt={text} width={56} height={56} className={clsx('tech-size', changeMode && 'invert')} />
-                <span className={clsx("absolute inset-0 rounded-md opacity-0 group-hover:opacity-30 blur-md -z-1 transitions", backgroundColor(color))}></span>
+                <span className={clsx("absolute inset-0 rounded-md opacity-0 group-hover:opacity-30 group-active:opacity-30 blur-md -z-1 transitions", backgroundColor(color))}></span>
             </span>
-            <p className='opacity-0 w-full text-center group-hover:opacity-80 absolute top-13 text-xs sm:top-16 sm:text-sm transitions color-text'>{text}</p>
+            <p className='opacity-0 w-full text-center group-hover:opacity-80 group-active:opacity-80 absolute top-13 text-xs sm:top-16 sm:text-sm transitions color-text'>{text}</p>
         </li>
     );
 };

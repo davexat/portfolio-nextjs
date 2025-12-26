@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
     return (
-        <article className='gap-4 flex flex-col justify-between my-container my-container-hover hover:translate-y-[-5px] transitions'>
+        <article className='gap-4 flex flex-col justify-between my-container my-container-hover hover:translate-y-[-5px] active:translate-y-[-5px] transitions'>
             <span className='flex justify-between gap-4 items-center'>
                 <h3 className='gradient subheading-section'>{project.title}</h3>
                 <span className={`text-xs px-3 py-1 font-medium rounded-xl shrink-0 ${project.status.style}`}>

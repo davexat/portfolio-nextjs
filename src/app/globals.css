@@ -58,25 +58,10 @@ body {
 }
 
 @layer utilities {
-  .color-text-invert {
-    @apply text-slate-100 dark:text-slate-900;
-  }
 
+  /* Gradiente */
   .gradient {
     @apply bg-linear-to-r from-blue-600 dark:from-blue-500 via-indigo-500 dark:via-indigo-400 to-violet-600 dark:to-violet-400;
-  }
-
-  /* Fondos */
-  .bg-pc {
-    @apply bg-blue-600 dark:bg-blue-500;
-  }
-
-  .bg-sc {
-    @apply bg-indigo-500 dark:bg-indigo-400;
-  }
-
-  .bg-tc {
-    @apply bg-violet-600 dark:bg-violet-400;
   }
 
   /* Contenedor */
@@ -89,15 +74,9 @@ body {
     @apply border rounded-md border-slate-200 dark:border-slate-800;
   }
 
+  /* Contenedor hover */
   .my-container-hover {
     @apply hover:border-blue-500 hover:shadow-blue-500/20 hover:shadow-md;
-  }
-
-  .timeline-icon {
-    /* Layout */
-    @apply block p-4 rounded-full;
-    /* Fondo */
-    @apply bg-white dark:bg-slate-900;
   }
 
   /* Botones hero */
@@ -149,14 +128,16 @@ body {
     @apply before:bg-linear-to-b before:from-blue-600 before:via-indigo-500 before:to-violet-600 dark:before:from-blue-500 dark:before:via-indigo-400 dark:before:to-violet-400;
   }
 
+  .timeline-icon {
+    /* Layout */
+    @apply block p-4 rounded-full;
+    /* Fondo */
+    @apply bg-white dark:bg-slate-900;
+  }
+
   /* Transiciones */
   .transitions {
     @apply transition-all duration-300;
-  }
-
-  /* Botones */
-  .layout-button {
-    @apply flex items-center rounded-md justify-center;
   }
 
   /* Lista de skills */
@@ -179,28 +160,8 @@ body {
     @apply focus:border-violet-500 focus:shadow-violet-500/20 focus:shadow-md outline-none;
   }
 
-  /* Tamaño sección principal */
-  .text-hero {
-    @apply text-7xl;
-  }
-
-  /* Tamaño título de sección */
-  .text-title {
-    @apply text-4xl;
-  }
-
-  /* Tamaño título de navbar */
-  .text-header {
-    @apply text-2xl;
-  }
-
   /* Tamaño iconos */
   .size-icon {
     @apply w-6 h-6;
-  }
-
-  /* Padding botones */
-  .size-button {
-    @apply p-4;
   }
 }

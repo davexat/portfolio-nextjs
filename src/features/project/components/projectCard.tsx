@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
     return (
-        <article className='hover:shadow-md gap-4 flex flex-col justify-between size-button border rounded-md border-button border-button-hover bg-button hover:translate-y-[-5px] transitions'>
+        <article className='gap-4 flex flex-col justify-between my-container my-container-hover hover:translate-y-[-5px] transitions'>
             <span className='flex justify-between gap-4 items-center'>
                 <h3 className='gradient subheading-section'>{project.title}</h3>
                 <span className={`text-xs px-3 py-1 font-medium rounded-xl shrink-0 ${project.status.style}`}>
@@ -18,7 +18,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <p>{project.description}</p>
             <ul className='flex flex-wrap gap-2'>
                 {project.technologies.map((tech, techIndex) => (
-                    <li key={techIndex} className='text-sm border border-button bg-blue-200 dark:bg-black rounded-xl px-2'>
+                    <li key={techIndex} className='text-sm border border-slate-200 dark:border-slate-800 bg-blue-200 dark:bg-black rounded-xl px-2'>
                         {tech}
                     </li>
                 ))}

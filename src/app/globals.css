@@ -33,7 +33,7 @@ body {
 
   .base-section {
     /* Layout */
-    @apply p-10 gap-5 sm:gap-10 w-full flex flex-col items-center justify-center transition-all duration-300;
+    @apply p-5 sm:p-10 gap-5 sm:gap-10 w-full flex flex-col items-center justify-center transition-all duration-300;
     /* Fondo */
     @apply bg-slate-50 dark:bg-slate-950;
   }
@@ -47,7 +47,7 @@ body {
   }
 
   .subtitle-section {
-    @apply text-3xl text-center bg-clip-text text-transparent;
+    @apply text-2xl sm:text-3xl text-center bg-clip-text text-transparent;
   }
 
   .subheading-section {
@@ -175,5 +175,9 @@ body {
   /* Tamaño iconos */
   .size-icon {
     @apply h-5 w-5 sm:h-6 sm:w-6;
+  }
+
+  .tech-size {
+    @apply h-12 w-12 sm:h-14 sm:w-14;
   }
 }

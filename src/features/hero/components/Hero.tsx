@@ -12,20 +12,22 @@ const HeroUI = ({ isDark }: { isDark: boolean }) => {
 
                 <p className='hero-text'>Full Stack Developer, Data Analyst & AI Enthusiast. I enjoy learning about new technologies and applying them to solve real-world problems.</p>
 
-                <div className='flex-center gap-3'>
+                <div className='flex-center flex-wrap gap-3'>
                     <Button onClick={() => scrollToSection('#about')} className='button-hero-principal transitions'>
                         <p className='text-button'>Learn More</p>
                         <LuArrowDown className="size-icon" />
                     </Button>
-                    <Button href='https://github.com/davexat' target='_blank' rel='noopener noreferrer' className='button-hero-icon transitions'>
-                        <LuGithub className='size-icon' />
-                    </Button>
-                    <Button href='https://www.linkedin.com/in/david-sandoval-bernitta/' target='_blank' rel='noopener noreferrer' className='button-hero-icon transitions'>
-                        <LuLinkedin className='size-icon' />
-                    </Button>
-                    <Button onClick={() => scrollToSection('#contact')} className='button-hero-icon transitions'>
-                        <LuMail className='size-icon' />
-                    </Button>
+                    <span className='flex-center gap-3'>
+                        <Button href='https://github.com/davexat' target='_blank' rel='noopener noreferrer' className='button-hero-icon transitions'>
+                            <LuGithub className='size-icon' />
+                        </Button>
+                        <Button href='https://www.linkedin.com/in/david-sandoval-bernitta/' target='_blank' rel='noopener noreferrer' className='button-hero-icon transitions'>
+                            <LuLinkedin className='size-icon' />
+                        </Button>
+                        <Button onClick={() => scrollToSection('#contact')} className='button-hero-icon transitions'>
+                            <LuMail className='size-icon' />
+                        </Button>
+                    </span>
                 </div>
             </span>
         </section>
